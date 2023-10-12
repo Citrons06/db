@@ -32,7 +32,7 @@ public class JdbcTemplateItemRepositoryV1 implements ItemRepository {
 
     @Override
     public Item save(Item item) {
-        String sql = "insert into item(item_name, price, quantity) values (?, ?, ?)";
+        String sql = "insert into item (item_name, price, quantity) values (?, ?, ?)";
         /**
          * id 자동 생성, KeyHolder 사용
          */
